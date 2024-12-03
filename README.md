@@ -21,37 +21,8 @@ This project uses an Arduino and an ultrasonic sensor to measure distances.
     - Trig to Digital Pin 9
     - Echo to Digital Pin 10
 
-2. Upload the following code to the Arduino:
+2. Upload the [code](/arduino/arduino.ino) to the Arduino
 
-```cpp
-const int trigPin = 9;
-const int echoPin = 10;
-long duration;
-int distance;
-
-void setup() {
-  pinMode(trigPin, OUTPUT);
-  pinMode(echoPin, INPUT);
-  Serial.begin(9600);
-}
-
-void loop() {
-  digitalWrite(trigPin, LOW);
-  delayMicroseconds(2);
-  digitalWrite(trigPin, HIGH);
-  delayMicroseconds(10);
-  digitalWrite(trigPin, LOW);
-  
-  duration = pulseIn(echoPin, HIGH);
-  distance = duration * 0.034 / 2;
-  
-  Serial.print("Distance: ");
-  Serial.print(distance);
-  Serial.println(" cm");
-  
-  delay(1000);
-}
-```
 
 ## Usage
 
