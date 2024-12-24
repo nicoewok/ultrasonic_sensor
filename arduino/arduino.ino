@@ -1,7 +1,7 @@
 const float distSensors = 10.0f;
 
-const int triggerP1 = 10;
-const int echoP1 = 11;
+const int triggerP1 = 11;
+const int echoP1 = 10;
 const int triggerP2 = 3;
 const int echoP2 = 2;
 
