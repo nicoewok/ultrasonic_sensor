@@ -71,7 +71,7 @@ void loop() {
     }
   }
   
-  //Look at second sensor only if
+  //Look at second sensor only if timer started
   if (startTime > 0.0f) {
     change2 += detectChange(triggerP2, echoP2, &lastDist2);
     delay(100);
