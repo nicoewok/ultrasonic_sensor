@@ -13,8 +13,9 @@ This project was created as part of the Scientific Measurements class of Nagoya 
 ## Get started
 
 1. Build your circuit similar to the Wiring Diagrams:
-![diagram](wiringdiagram.png)
-You can find a schematic diagram [here](wiringdiagram.pdf).
+![diagram](wiringdiagram_simple.png)
+You can find a schematic diagram:
+![here](wiringdiagram_complex.png).
 
 2. Measure the distance between two sensors by hand (in cm).
 3. Write the distance in **distSensors** in the first line of the [code](/arduino/arduino.ino).
